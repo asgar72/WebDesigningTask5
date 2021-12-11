@@ -1,0 +1,187 @@
+*
+{
+	padding: 0;
+	margin: 0;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+  font-family: sans-serif;  
+}
+
+
+
+/* ------------- Navigation Bar ------------- */
+
+  .nav .logo{
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 40px;
+}
+
+.nav{
+  height: 70px;
+  background: #063247;
+  box-shadow: 0 3px 15px rgba(0,0,0,.4);
+  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.nav ul{
+  float: right;
+  margin-right: 30px;
+  
+}
+.nav ul li{
+  display: inline-block;
+}
+.nav ul li a{
+  color: white;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  background: #063247;
+  transition: .5s;
+
+}
+.nav ul li a:hover,
+.nav ul li a.active{
+  color: #23dbdb;
+
+}
+.nav ul ul{
+  position: absolute;
+  top: 85px;
+  border-top: 3px solid #23dbdb;
+  opacity: 0;
+  visibility: hidden;
+}
+.nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+  z-index: 2;
+}
+.nav ul ul li{
+  width: 350px;
+  display: list-item;
+  position: relative;
+  border: 1px solid #042331;
+  border-top: none;
+}
+.nav ul ul li a{
+  line-height: 50px;
+}
+.nav ul ul ul{
+  border-top: none;
+}
+.nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+.nav ul ul li a i{
+  margin-left: 45px;
+}
+
+/* ------x------- Navigation Bar -------x------ */
+section
+{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.5),rgba(4, 9, 30, 0.5)),
+	 url(back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center;
+	background-attachment: fixed;
+	position: relative;
+}
+section .content
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+section .content h2
+{
+	font-size: 50px;
+	color: white;
+	margin-bottom: 70px;
+	text-align: center;
+}
+.btn 
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin-top: 50px;
+	width: 180px;
+	padding: 16px;
+	font-size: 20px;
+	border-radius: 50px;
+	border: 1px solid black;
+	background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+	color: black;
+}
+.btn:hover
+{
+	background: transparent;
+	color: white;
+	border: 1px solid white;
+}
+main 
+{
+	margin-top: 50px;
+}
+main .exp h2
+{
+	text-align: center;
+	color: red;
+}
+main .exp h3
+{
+	text-align: center;
+	margin-top: 20px;
+}
+.notic 
+{
+	border: 1px solid gray;
+	width: 300px;
+	height: auto;
+	margin-top: 20px;
+	margin-left: 110px;
+	float: left;
+}
+.notic h2
+{
+	color: red;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+}
+.notic p
+{
+	padding: 12px;
+	margin-top: 10px 0;
+	text-align: justify;
+}
+.notic .btn-1
+{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 200px;
+	margin-left: 50px;
+	padding: 10px;
+	color: #063247;
+	border: 1px solid black;
+}
